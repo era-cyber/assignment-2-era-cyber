@@ -53,7 +53,7 @@ def main():
     threshold = bin_img.find_otsu_threshold(hist)
     print("Optimal threshold: ", threshold)
 
-    binary_img = bin_img.binarize(input_image)
+    binary_img = bin_img.binarize(input_image, threshold)
     output_image_name = output_directory + "binary_image" + ".jpg"
     imwrite(output_image_name, binary_img)
 
