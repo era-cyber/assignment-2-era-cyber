@@ -7,7 +7,7 @@ class BinaryImage:
     def compute_histogram(self, image):
         """Computes the histogram of the input image
         takes as input:
-        image: a grey scale image
+        image: a greyscale image
         returns a histogram as a list"""
 
         hist = [0]*256
@@ -15,7 +15,7 @@ class BinaryImage:
         return hist
 
     def find_otsu_threshold(self, hist):
-        """analyses a histogram it to find the otsu's threshold assuming that the input hstogram is bimodal histogram
+        """analyses a histogram to find the otsu's threshold assuming that the input histogram is bimodal
         takes as input
         hist: a bimodal histogram
         returns: an optimal threshold value (otsu's threshold)"""
@@ -24,10 +24,11 @@ class BinaryImage:
 
         return threshold
 
-    def binarize(self, image):
-        """Comptues the binary image of the the input image based on histogram analysis and thresholding
+    def binarize(self, image, threshold):
+        """Comptues the binary image of the input image based on histogram analysis and thresholding
         take as input
-        image: an grey scale image
+        image: an greyscale image
+        threshold: the threshold used in binarization
         returns: a binary image"""
 
         bin_img = image.copy()
