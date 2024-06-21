@@ -16,7 +16,7 @@ class Rle:
 
     def decode_image(self, rle_code, height , width):
         """
-        Get original image from the rle_code
+        Reconstruct the original image from the rle_code
         takes as input:
         rle_code: the run length code to be decoded
         Height, width: height and width of the original image
