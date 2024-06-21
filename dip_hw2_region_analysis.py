@@ -1,4 +1,4 @@
-"""dip_hw1.py: Starter file to run howework 1"""
+"""dip_hw1.py: Starter file to run howework 2"""
 #Example Usage: ./dip_hw1_region_analysis -i imagename.jpg
 from dip import namedWindow, imshow, waitKey, imwrite, imread
 import sys
@@ -26,8 +26,8 @@ def display_image(window_name, image):
 
 
 def main():
-    """ The main funtion that parses input arguments, calls the approrpiate
-     interpolation method and writes the output image"""
+    """ The main function that parses input arguments, calls the appropriate
+     interpolation method and writes the output image """
 
     parser = ArgumentParser()
     parser.add_argument("-i", "--image", dest="image",
